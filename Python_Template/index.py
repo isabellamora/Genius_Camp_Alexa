@@ -1,0 +1,155 @@
+"""
+Hello world, this is a template for building Alexa skills.
+(This template does not include the printing of the skill ID's) 
+
+READ ME:
+For the coding novices, this seems like a lot of code. Not to worry, it is because most 
+of this is already layed out such that most of the heavy lifting is already taken care of. 
+The main thing that will be altered here are the "Intents". 
+
+Code Toolbox (copy and paste, change names as needed)
+1) Making variables from slots:
+    variableName = intent['slots']['slotname']['value']
+2) Making attributes:
+    session_attributes = {'keyName': 'keyvalue'}
+"""
+
+# --------------- Helpers that build all of the responses ----------------------
+# DO NOT change any of the code inside build_speechlet_response() or build_response()
+
+def build_speechlet_response(title, output, reprompt_text, should_end_session):
+    return {
+        'outputSpeech': {
+            'type': 'PlainText',
+            'text': output
+        },
+        'card': {
+            'type': 'Simple',
+            'title': "SessionSpeechlet - " + title,
+            'content': "SessionSpeechlet - " + output
+        },
+        'reprompt': {
+            'outputSpeech': {
+                'type': 'PlainText',
+                'text': reprompt_text
+            }
+        },
+        'shouldEndSession': should_end_session
+    }
+
+def build_response(session_attributes, speechlet_response):
+    return {
+        'version': '1.0',
+        'sessionAttributes': session_attributes,
+        'response': speechlet_response
+    }
+
+# --------------- Functions that control the skill's behavior ------------------
+# This is the section where we get creative. Add functions to handle your specific intents
+# DO NOT change the names of get_welcome_response(), handle_session_end_request()
+# DO NOT change what each function "returns"
+# DO NOT change the names of the variables already initialized. ONLY change what values they hold
+# ONLY change/add/remove the functions that start with "MyIntentFunction..."
+
+
+def get_welcome_response():
+    """ If we wanted to initialize the session to have some attributes we could
+    add those here
+    """
+    session_attributes = {}
+    card_title = "Welcome"
+    speech_output = "WRITE TEXT HERE"
+
+    # If the user either does not reply to the welcome message or says something
+    # that is not understood, they will be prompted again with this text.
+    reprompt_text = "WRITE TEXT HERE" 
+    should_end_session =  False
+
+    return build_response(session_attributes, build_speechlet_response(
+        card_title, speech_output, reprompt_text, should_end_session))
+
+def MyIntentFunctionOne(intent, session):
+    session_attributes = {}
+    should_end_session =  False #change boolean when needed
+    card_title = "WRITE TITLE HERE"
+    speech_output = "WRITE TEXT HERE"
+    reprompt_text = "WRITE TEXT HERE"
+    return build_response(session_attributes, build_speechlet_response(
+        card_title, speech_output, reprompt_text, should_end_session))
+
+def MyIntentFunctionTwo(intent, session):
+    session_attributes = {}
+    should_end_session = False #change boolean when needed
+    card_title = "WRITE TITLE HERE"
+    speech_output = "WRITE TEXT HERE"
+    reprompt_text = "WRITE TEXT HERE"
+    return build_response(session_attributes, build_speechlet_response(
+        card_title, speech_output, reprompt_text, should_end_session))
+
+def handle_session_end_request():
+    card_title = "Session Ended"
+    speech_output = "WRITE TEXT HERE"
+
+    # Setting this to true ends the session and exits the skill.
+    should_end_session = True
+    return build_response({}, build_speechlet_response(
+        card_title, speech_output, None, should_end_session))
+
+# --------------- Events ------------------
+# All Alexa skills have events within their life, LaunchRequest (beginning), IntentRequest (middle), and
+# SessionEnded (end). The following code just controls whether we are at the beginning, middle,
+# or end of our skill. All we need to change here are the intent function names in on_intent().
+
+def on_session_started(session_started_request, session):
+    """ Called when the session starts """
+    #empty function for now
+
+def on_launch(launch_request, session):
+    """ Called when the user launches the skill without specifying what they
+    want
+    """
+    # Dispatch to your skill's launch
+    return get_welcome_response()
+
+def on_intent(intent_request, session):
+    """ Called when the user specifies an intent for this skill """
+    intent = intent_request['intent']
+    intent_name = intent_request['intent']['name']
+
+    #When adding new intent functions change the names in these 'if' statements
+    # Dispatch to your skill's intent handlers
+    if intent_name == "MyIntentOne":
+        return MyIntentFunctionOne(intent, session) #CHANGE THIS NAME WHEN ADDING INTENTS
+    elif intent_name == "MyIntentTwo":
+        return MyIntentFunctionTwo(intent, session) #CHANGE THIS NAME WHEN ADDING INTENTS
+    elif intent_name == "AMAZON.HelpIntent":
+        return get_welcome_response()
+    elif intent_name == "AMAZON.CancelIntent" or intent_name == "AMAZON.StopIntent":
+        return handle_session_end_request()
+    else:
+        raise ValueError("Invalid intent")
+
+
+def on_session_ended(session_ended_request, session):
+    """ Called when the user ends the session.
+    Is not called when the skill returns should_end_session=true
+    """
+    # add cleanup logic here
+
+
+# --------------- Main handler ------------------
+
+def lambda_handler(event, context):
+    """ Route the incoming request based on type (LaunchRequest, IntentRequest,
+    etc.) The JSON body of the request is provided in the event parameter.
+    """
+    if event['session']['new']:
+        on_session_started({'requestId': event['request']['requestId']},
+                           event['session'])
+    if event['request']['type'] == "LaunchRequest":
+        return on_launch(event['request'], event['session'])
+    elif event['request']['type'] == "IntentRequest":
+        return on_intent(event['request'], event['session'])
+    elif event['request']['type'] == "SessionEndedRequest":
+        return on_session_ended(event['request'], event['session'])
+ 
