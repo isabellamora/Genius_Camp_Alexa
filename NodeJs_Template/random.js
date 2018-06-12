@@ -12,9 +12,10 @@ function randomChoice(arr){
   
   //we are choosing a random value that is as big as the number of items in our array
   var randomValue = Math.random() * arr.length;
-  
   //then we are rounding down that value, since it can give decimal values and we can't use those in arrays
-  var choice = arr[Math.floor(randomValue)];
+  //which will replace the old value in randomValue with the new rounded down value
+  randomValue = Math.floor(randomValue)
+  var choice = arr[randomValue];
   
   return choice;
 }
