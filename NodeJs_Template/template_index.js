@@ -23,7 +23,8 @@ const handlers = {
     },
     'MyFirstIntent': function () {
         var speechOutput = "This is my very first intent";
-        this.response.speak(speechOutput);
+        var speechReprompt = "Let me say this again, this is my very first intent";
+        this.response.speak(speechOutput).listen(speechReprompt);
         this.emit(':responseReady');
     },
     'AMAZON.HelpIntent': function () {
@@ -42,8 +43,8 @@ const handlers = {
         this.emit(':responseReady');
     },
      'AMAZON.FallbackIntent': function () {
-        this.response.speak(STOP_MESSAGE);
-        this.emit(':responseReady');
+        this.response.speak(FALLBACK_MESSAGE);
+        this.emit(':responseReady').listen(HELP_REPROMPT);
     },
 };
 
