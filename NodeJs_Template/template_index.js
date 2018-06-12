@@ -13,6 +13,7 @@ const HELP_REPROMPT = 'What can I help you with?';
 
 //Alexa will speak out the stop message when the program ends
 const STOP_MESSAGE = 'Goodbye!';
+const FALLBACK_MESSAGE = 'I dont recognize that';
 
 const handlers = {
     'LaunchRequest': function () {
@@ -37,6 +38,10 @@ const handlers = {
         this.emit(':responseReady');
     },
     'AMAZON.StopIntent': function () {
+        this.response.speak(STOP_MESSAGE);
+        this.emit(':responseReady');
+    },
+     'AMAZON.FallbackIntent': function () {
         this.response.speak(STOP_MESSAGE);
         this.emit(':responseReady');
     },
