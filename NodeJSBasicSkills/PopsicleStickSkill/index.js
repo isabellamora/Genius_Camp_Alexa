@@ -17,6 +17,9 @@ const FALLBACK_MESSAGE = 'I dont recognize that';
 
 const handlers = {
     'LaunchRequest': function () {
+        
+      //By placing the name of the intent inside of the emit function we are telling alexa to jump to that intent
+      //Since it's in the launch request, when we launch the skill it will pick a student immediately
       this.emit('PickIntent');
     },
     'PickIntent': function () {
