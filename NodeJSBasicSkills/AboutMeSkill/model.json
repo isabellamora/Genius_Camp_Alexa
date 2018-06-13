@@ -1,0 +1,70 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "profile about me",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "FactIntent",
+                    "slots": [],
+                    "samples": [
+                        "tell me about myself",
+                        "give me a fact",
+                        "tell me a fact",
+                        "say a fact about me"
+                    ]
+                },
+                {
+                    "name": "FavoriteIntent",
+                    "slots": [
+                        {
+                            "name": "myFavorite",
+                            "type": "List_of_Favorites"
+                        }
+                    ],
+                    "samples": [
+                        "tell me about my favorite {myFavorite}",
+                        "what is my favorite {myFavorite}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "List_of_Favorites",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "band"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "color"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "food"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
