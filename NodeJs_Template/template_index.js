@@ -43,8 +43,8 @@ const handlers = {
         this.emit(':responseReady');
     },
      'AMAZON.FallbackIntent': function () {
-        this.response.speak(FALLBACK_MESSAGE);
-        this.emit(':responseReady').listen(HELP_REPROMPT);
+        this.response.speak(FALLBACK_MESSAGE).listen(HELP_REPROMPT);
+        this.emit(':responseReady');
     },
 };
 
