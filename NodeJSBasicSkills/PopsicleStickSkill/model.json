@@ -1,0 +1,36 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "popsicle stick",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "PickIntent",
+                    "slots": [],
+                    "samples": [
+                        "yes",
+                        "another student",
+                        "pick another student",
+                        "pick a student"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
