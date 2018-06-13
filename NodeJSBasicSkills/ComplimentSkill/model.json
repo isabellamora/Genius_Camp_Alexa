@@ -1,0 +1,57 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my compliments",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ComplimentIntent",
+                    "slots": [],
+                    "samples": [
+                        "tell me something nice",
+                        "may i have a compliment",
+                        "tell me a compliment",
+                        "give me a compliment"
+                    ]
+                },
+                {
+                    "name": "AlexaComplimentIntent",
+                    "slots": [
+                        {
+                            "name": "myCompliment",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "you look {myCompliment}",
+                        "you are {myCompliment}"
+                    ]
+                },
+                {
+                    "name": "SuperComplimentIntent",
+                    "slots": [],
+                    "samples": [
+                        "give me a super compliment",
+                        "tell me a super compliment"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
