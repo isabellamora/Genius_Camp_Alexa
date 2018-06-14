@@ -2,11 +2,52 @@
 
 https://developer.amazon.com/docs/custom-skills/ask-soundlibrary.html
 
+Alexa allows you to include sound bytes to your skill that can be used across all alexa products.
+
+#### Understand that the sound clip must come from a website that has `https` in the url.
+
+# Speech Synthesis Markup Language (SSML) Reference
+
+https://developer.amazon.com/docs/custom-skills/speech-synthesis-markup-language-ssml-reference.html
+
+SSML allows alexa to change her voice to create a livelier skill experience.
+
 ## How to include a sound byte
 In your intent...
+
 ```
 var soundByte = "<audio src=’https://s3.amazonaws.com/ask-soundlibrary/musical/amzn_sfx_trumpet_bugle_03.mp3'/>";
 var speechOutput = "Hey, look I'm a bear! " + soundByte;
 
-this.response.speak(speechOutput);
+this.response.speak(speechOutput).listen(speechOutput);
+```
+
+## How to make sound effects
+In your intent...
+
+```
+var effect = "<amazon:effect name='whispered'>I'm a spooky ghost now, boo!</amazon:effect>.";
+var speechOutput = "I'm going to say this number, " + effect;
+ 
+this.response.speak(speechOutput).listen(speechOutput);
+```
+
+## How to interpret speech
+In your intent...
+
+```
+var interpret = "<say-as interpret-as='cardinal'>12345</say-as>.";
+var speechOutput = "I'm going to properly say the number ";
+
+this.response.speak(speechOutput).listen(speechOutput);
+```
+
+## We can combine speech interpretation and sound effects too!
+In your intent...
+
+```
+var interpretEffect = "<amazon:effect name='whispered'> <say-as interpret-as='cardinal'>12345</say-as> </amazon:effect>."
+var speechOutput = "I'm a spooky ghost that knows her numbers "
+
+this.response.speak(speechOutput).listen(speechOutput);
 ```
