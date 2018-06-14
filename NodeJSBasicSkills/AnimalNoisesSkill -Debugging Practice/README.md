@@ -52,3 +52,18 @@ var speechOutput = "I'm a spooky ghost that knows her numbers "
 
 this.response.speak(speechOutput).listen(speechOutput);
 ```
+
+## We can differentiate between past tense and present tense
+In your intent...
+
+```
+var spellOut = "<say-as interpret-as='characters'>";
+var present = "<w role='amazon:VB'>read</w>";
+var past = "<w role='amazon:VBD'>read</w>";
+var speechOutput = "The word read " + spellOut +
+            "may be interpreted " + spellOut + 
+            "as either the present simple form " + present + ", " + 
+            "or the past participle form " + past + ".";
+
+this.response.speak(speechOutput).listen("wow how neat");
+```
