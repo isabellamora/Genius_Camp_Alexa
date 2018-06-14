@@ -4,7 +4,8 @@ https://developer.amazon.com/docs/custom-skills/ask-soundlibrary.html
 
 Alexa allows you to include sound bytes to your skill that can be used across all alexa products.
 
-#### Understand that the sound clip must come from a website that has `https` in the url.
+#### Sound clips must come from a website that has `https` in the url.
+#### Sound clips must be `.mp3` format
 
 # Speech Synthesis Markup Language (SSML) Reference
 
