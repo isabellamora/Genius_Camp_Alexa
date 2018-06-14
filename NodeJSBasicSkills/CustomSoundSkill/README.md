@@ -13,6 +13,10 @@ https://developer.amazon.com/docs/custom-skills/speech-synthesis-markup-language
 
 SSML allows alexa to change her voice to create a livelier skill experience.
 
+https://developer.amazon.com/de/docs/custom-skills/speech-synthesis-markup-language-ssml-reference.html#supported-speechcons
+
+Have alexa say words with the right dialect.
+
 ## How to include a sound byte
 In your intent...
 
@@ -64,6 +68,16 @@ var speechOutput = "The word read " + spellOut +
             "may be interpreted " + spellOut + 
             "as either the present simple form " + present + ", " + 
             "or the past participle form " + past + ".";
+
+this.response.speak(speechOutput).listen("wow how neat");
+```
+
+## We can also have alexa say words with the proper dialect
+In your intent... Also make sure you spell our the words properly
+
+```
+var someFrench = "<say-as interpret-as='interjection'>Bon Appetit</say-as>";
+var speechOutput = "I can say bon appetit in french, listen " + someFrench;
 
 this.response.speak(speechOutput).listen("wow how neat");
 ```
