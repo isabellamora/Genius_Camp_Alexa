@@ -18,7 +18,7 @@ const FALLBACK_MESSAGE = 'I dont recognize that';
 const handlers = {
     'LaunchRequest': function () {
       var speechOutput = "This skill is just an example, what would you like to do?";
-      this.response.speak(speechOutput);
+      this.response.speak(speechOutput).listen("What would you like to do?");
       this.emit(':responseReady');
     },
     'MyFirstIntent': function () {
