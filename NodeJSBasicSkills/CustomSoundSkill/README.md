@@ -17,7 +17,7 @@ SSML allows alexa to change her voice to create a livelier skill experience.
 In your intent...
 
 ```
-var soundByte = "<audio src=’https://s3.amazonaws.com/ask-soundlibrary/musical/amzn_sfx_trumpet_bugle_03.mp3'/>";
+var soundByte = "<audio src='https://s3.amazonaws.com/ask-soundlibrary/animals/amzn_sfx_bear_groan_roar_01.mp3'/>";
 var speechOutput = "Hey, look I'm a bear! " + soundByte;
 
 this.response.speak(speechOutput).listen(speechOutput);
