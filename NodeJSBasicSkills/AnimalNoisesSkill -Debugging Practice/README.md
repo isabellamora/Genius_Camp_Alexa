@@ -57,7 +57,7 @@ this.response.speak(speechOutput).listen(speechOutput);
 In your intent...
 
 ```
-var spellOut = "<say-as interpret-as='characters'>";
+var spellOut = "<say-as interpret-as='characters'>read</say-as>";
 var present = "<w role='amazon:VB'>read</w>";
 var past = "<w role='amazon:VBD'>read</w>";
 var speechOutput = "The word read " + spellOut +
