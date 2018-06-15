@@ -1,64 +1,58 @@
-Alexa (Junior High) - Lesson Plan
-Click here to access the elementary lesson plan.
-Click here to enter in the camps you’ll be working at.
-Click here to access the hamburger sample lesson plan. 
+# Alexa (General Camp) - Lesson Plan
 
-Goal/Objective
+## Goal/Objective
 SWBAT create their own Alexa skills.
 
-
-
-
-Key Skill 1:
+### Key Skill 1:
 Account Login/Management (aws/adc)
-Key Skill 2:
+### Key Skill 2:
 Learning dialogue (utterances)
-Key Skill 3:
+### Key Skill 3:
 Javascript Syntax
-Key Skill 4:
+### Key Skill 4:
 Code - intents (giving a voice command)
-Key Skill 5:
+### Key Skill 5:
 Code - slots (giving a voice input)
-Key Skill 6:
+### Key Skill 6:
 Code - attributes (storing voice input)
-Key Skill 7:
+### Key Skill 7:
 Code - functions (organizing code)
-Key Skill 8:
+### Key Skill 8:
 Debugging (how to fix our code)
-Key Skill 9:
+### Key Skill 9:
 #Code - database (DynamoDB)
 
-Curriculum/Learning Tools
+### Curriculum/Learning Tools
 Alexa Cookbook: https://github.com/robm26/Cookbook
 Martin’s Github: https://github.com/MartinMurata/Cod.Ed/tree/master
 UCI resource: https://wrkshp.github.io/alexa/
 NPM (node package manager) : https://www.npmjs.com/package/alexa-sdk#persisting-skill-attributes-through-dynamodb
 
 
-LESSON PLANNER
+# LESSON PLANNER
 
-*Before lesson 1 - have participants create AWS and developer accounts
-Lesson 1
-Learning Goal:
+#### *Before lesson 1 - have participants create AWS and developer accounts
+## Lesson 1
+### Learning Goal:
 SWBAT understand the difference between front and back end
-Engagement:
+### Engagement:
 Showcase a sample alexa skill (ie. “Star Roster Skill”) with an echo dot
-Instructional Plan:
-Vocabulary:
-Amazon Developer Console (ADC)
-Amazon Web services (AWS)
-Lambda
-Invocation
-Intents
-Utterances
-Amazon Resource Name (ARN) / Skill ID
-Explore: ADC and AWS environment
-Demo: creating a new skill in ADC and creating a function in AWS
-Explain: Template that is being provided
-Explain: How ADC and AWS “talk to each other” 
-Activity: Involve students in a dialogue piece
-Q&A: Categorize situations into AWS/ADC
-Activity: Use template from AWS and alter aspects and test
+### Instructional Plan:
+- Vocabulary:
+  - Amazon Developer Console (ADC)
+  - Amazon Web services (AWS)
+  - Lambda
+  - Invocation
+  - Intents
+  - Utterances
+  - Amazon Resource Name (ARN) / Skill ID
+- Explore: ADC and AWS environment
+- Demo: creating a new skill in ADC and creating a function in AWS
+- Explain: Template that is being provided
+- Explain: How ADC and AWS “talk to each other” 
+- Activity: Involve students in a dialogue piece
+- Q&A: Categorize situations into AWS/ADC
+- Activity: Use template from AWS and alter aspects and test
 
 Application:
 Create “Hello World” Skill
