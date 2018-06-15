@@ -19,3 +19,7 @@ Don't like the AWS editor? Work your code on the side and copy-paste back in whe
 [How To Design Dialogue with Alexa in Mind](https://developer.amazon.com/designing-for-voice/)
 
 [Is It Down?](http://downdetector.com/status/amazon-alexa)
+
+## S3 bucket cookbook
+
+https://github.com/alexa/alexa-cookbook/tree/master/aws/Amazon-S3/read
