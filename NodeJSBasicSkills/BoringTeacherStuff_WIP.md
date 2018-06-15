@@ -24,8 +24,11 @@ Debugging (how to fix our code)
 
 ### Curriculum/Learning Tools
 Alexa Cookbook: https://github.com/robm26/Cookbook
+
 Martin’s Github: https://github.com/MartinMurata/Cod.Ed/tree/master
+
 UCI resource: https://wrkshp.github.io/alexa/
+
 NPM (node package manager) : https://www.npmjs.com/package/alexa-sdk#persisting-skill-attributes-through-dynamodb
 
 
@@ -54,188 +57,159 @@ Showcase a sample alexa skill (ie. “Star Roster Skill”) with an echo dot
 - Q&A: Categorize situations into AWS/ADC
 - Activity: Use template from AWS and alter aspects and test
 
-Application:
+### Application:
 Create “Hello World” Skill
+
 https://docs.google.com/document/d/1cMfYASXKzDYdWOB9ngTBMGp77Lwnr1HgzwzEQCWbLaA/edit
-Review:
+
+### Review:
 KAHOOT quiz on front end and back end
+
 https://play.kahoot.it/#/?quizId=aaf1c731-9719-4362-8ff2-974357ee1c5a
+
 Summary: Intents, utterances, invocation name, and slots is our “front-end” that goes into the ADC. The lambda code, our “back-end” goes into AWS.
 
-
-
-
-
-Lesson 2
-Learning Goal:
+## Lesson 2
+### Learning Goal:
 SWBAT understand intents and utterances
-Engagement:
+### Engagement:
 Live activity/dialogue
-Instructional Plan:
+### Instructional Plan:
 
-Explain: Input into Alexa “triggers” intents
-Demo: Dialogue with Alexa with pre-programmed responses
-Explain: Intents communicate with AWS; intents that exist in AWS don’t have to exist in ADC, but any intent in ADC must exist in AWS
-Activity: Creating multiple intents with 
+- Explain: Input into Alexa “triggers” intents
+- Demo: Dialogue with Alexa with pre-programmed responses
+- Explain: Intents communicate with AWS; intents that exist in AWS don’t have to exist in ADC, but any intent in ADC must exist in AWS
+- Activity: Creating multiple intents with 
 
-Application:
+### Application:
 Show Profile Skill //link to in-depth lesson
+
 Adding multiple intents to a skill
 
-Review:
+### Review:
 Flipgrid / response
 
-Lesson 3
-Learning Goal:
-SWBAT understand slots 
-Engagement:
-Demo: Favorite food intent
-Create a custom slot type
+## Lesson 3
+### Learning Goal:
+- SWBAT understand slots 
+### Engagement:
+- Demo: Favorite food intent
+- Create a custom slot type
 
-Instructional Plan:
-Explain: What variables are and how slots relate
-Relating slots to variables used in math, like ‘x’
-{myColor}
-Use Amazon’s color slot type vs. creating a custom color slot type
-Using built-in slot types
+### Instructional Plan:
+- Explain: What variables are and how slots relate
+- Relating slots to variables used in math, like ‘x’
+- {myColor}
+- Use Amazon’s color slot type vs. creating a custom color slot type
+- Using built-in slot types
 
-Application:
+### Application:
 Create Hello World Memory Skill
-Review:
+### Review:
 
-
-
-
-
-
-Lesson 4
-Learning Goal:
+## Lesson 4
+### Learning Goal:
 SWBAT understand attributes 
-Engagement:
-Dialogue: Alexa asks for info, stores it, and regurgitates
+### Engagement:
+- Dialogue: Alexa asks for info, stores it, and regurgitates
 
-Instructional Plan*:
-Explain how attributes can be stored and used globally
-Use to store name, favorite color, food
+### Instructional Plan*:
+- Explain how attributes can be stored and used globally
+- Use to store name, favorite color, food
 
-Application:
+### Application:
 Change profile skill to save data and show user at the end
 
-Review:
+### Review:
 
-
-
-Lesson 5
-Learning Goal:
+## Lesson 5
+### Learning Goal:
 SWBAT use their knowledge of slots, intents, and utterances to create a skill
-Engagement:
+### Engagement:
 Introduce Guessing Game with dialogue:
+
 “I’m thinking of a number between…”
+
 “higher” or “lower”
 
-Instructional Plan*:
-Explain how to use Math.random
-Review vocabulary
-Invocation
-Intent
-Utterance
-Slot types
-Attributes
-Skill
+### Instructional Plan*:
+- Explain how to use Math.random
+- Review vocabulary
+- Invocation
+- Intent
+- Utterance
+- Slot types
+- Attributes
+- Skill
 
-Application:
+### Application:
 Create Guessing Game 
-Review:
+### Review:
 
-
-
-
-
-
-
-Lesson 6
-Learning Goal:
+## Lesson 6
+### Learning Goal:
 SWBAT recall what we learned last week 
-Engagement:
+### Engagement:
 
 
-Instructional Plan:
+### Instructional Plan:
 
 
-Application:
+### Application:
 Create rock paper scissors game 
-Review:
+
+### Review:
 
 
-Lesson 7
-Learning Goal:
+## Lesson 7
+### Learning Goal:
 SWBAT will be able to lay out on paper what skill they want to make 
-Engagement:
+### Engagement:
 
+### Instructional Plan:
 
-Instructional Plan:
+### Application:
 
+### Review:
 
-Application:
-
-
-Review:
-
-
-
-Lesson 8
-Learning Goal:
+## Lesson 8
+### Learning Goal:
 SWBAT 
-Engagement:
+### Engagement:
 
+### Instructional Plan:
 
-Instructional Plan:
+### Application:
 
+### Review:
 
-Application:
-
-
-Review:
-
-
-
-Lesson 9
-Learning Goal:
+## Lesson 9
+### Learning Goal:
 SWBAT
-Engagement:
+### Engagement:
 
+### Instructional Plan:
 
-Instructional Plan:
+### Application:
 
+### Review:
 
-Application:
-
-
-Review:
-
-
-Lesson 10
-Learning Goal:
+## Lesson 10
+### Learning Goal:
 SWBAT
-Engagement:
+### Engagement:
+
+### Instructional Plan:
+
+### Application:
+
+### Review:
 
 
-Instructional Plan:
-
-
-Application:
-
-
-Review:
-
-
-
-
-
-Instructional Plan Possibilities:
-Lecture
-Seminar/Discussion
-Modeling
-Checking for Understanding
-Pair/Share
-Group response (e.g., Flipgrid)
+# Instructional Plan Possibilities:
+- Lecture
+- Seminar/Discussion
+- Modeling
+- Checking for Understanding
+- Pair/Share
+- Group response (e.g., Flipgrid)
