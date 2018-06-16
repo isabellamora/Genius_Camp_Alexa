@@ -1,0 +1,51 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "about me easy",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "NameIntent",
+                    "slots": [
+                        {
+                            "name": "myName",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "my name is {myName}"
+                    ]
+                },
+                {
+                    "name": "FoodIntent",
+                    "slots": [
+                        {
+                            "name": "myFood",
+                            "type": "AMAZON.Food"
+                        }
+                    ],
+                    "samples": [
+                        "my favorite food is {myFood}",
+                        "i like {myFood}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
