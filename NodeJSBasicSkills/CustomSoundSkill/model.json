@@ -1,0 +1,52 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my custom sound",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "DogIntent",
+                    "slots": [],
+                    "samples": [
+                        "say woof",
+                        "speak like a dog",
+                        "talk like a dog"
+                    ]
+                },
+                {
+                    "name": "NatureIntent",
+                    "slots": [],
+                    "samples": [
+                        "play sounds of a nature",
+                        "make nature sounds",
+                        "make nature noises"
+                    ]
+                },
+                {
+                    "name": "SpookyIntent",
+                    "slots": [],
+                    "samples": [
+                        "scare me",
+                        "say something scary"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
