@@ -35,12 +35,13 @@ const handlers = {
         var speechOutput = "I'm going to make a lot of nature sounds! " + soundByte1 + soundByte2 + soundByte3;
         var speechReprompt = "Did you look all of my nature sounds";
         this.response.speak(speechOutput).listen(speechReprompt);
+        this.emit(':responseReady');
     },
     'SpookyIntent': function () {
         var effect = "<amazon:effect name='whispered'>I'm a spooky ghost now, boo!</amazon:effect>.";
         var speechOutput = "I'm going to scare you now, " + effect;
-        
         this.response.speak(speechOutput).listen(speechOutput);
+        this.emit(':responseReady');
     },
     'AMAZON.HelpIntent': function () {
         const speechOutput = HELP_MESSAGE;
