@@ -1,0 +1,40 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "hello world celine",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "greetingIntent",
+                    "slots": [],
+                    "samples": [
+                        "greetings"
+                    ]
+                },
+                {
+                    "name": "goodbyeIntent",
+                    "slots": [],
+                    "samples": [
+                        "goodbye"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}

@@ -1,3 +1,4 @@
-# Sunset Alexa Camp 
+# Genius_Sunset
 
-source code and files for Sunset students
+
+Alexa templates and files for the Genius Alexa Camp

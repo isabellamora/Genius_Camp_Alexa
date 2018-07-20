@@ -1,0 +1,68 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "sound skill celine",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "dogIntent",
+                    "slots": [],
+                    "samples": [
+                        "what does the dog say",
+                        "act like a dog ",
+                        "play dog noise ",
+                        "bark like a dog "
+                    ]
+                },
+                {
+                    "name": "catIntent",
+                    "slots": [],
+                    "samples": [
+                        "act like a cat ",
+                        "what does the cat say ",
+                        "meow like a cat "
+                    ]
+                },
+                {
+                    "name": "birdIntent",
+                    "slots": [],
+                    "samples": [
+                        "act like a bird ",
+                        "what does a bird say ",
+                        "chirp like a bird "
+                    ]
+                },
+                {
+                    "name": "spookyIntent",
+                    "slots": [],
+                    "samples": [
+                        "tell me something spooky"
+                    ]
+                },
+                {
+                    "name": "storyIntent",
+                    "slots": [],
+                    "samples": [
+                        "tell me a story"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}

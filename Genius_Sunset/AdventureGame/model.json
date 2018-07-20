@@ -1,0 +1,42 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "adventure game celine",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "CatIntent",
+                    "slots": [],
+                    "samples": [
+                        "I want to see cats",
+                        "I want to see the cats"
+                    ]
+                },
+                {
+                    "name": "DogIntent",
+                    "slots": [],
+                    "samples": [
+                        "I want to see dogs ",
+                        "I want to see the dogs "
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}

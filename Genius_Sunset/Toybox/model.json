@@ -1,0 +1,64 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "toybox celine",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "DiceIntent",
+                    "slots": [],
+                    "samples": [
+                        "roll a die",
+                        "roll the dice",
+                        "dice "
+                    ]
+                },
+                {
+                    "name": "ToyBoxIntent",
+                    "slots": [],
+                    "samples": [
+                        "pick a toy for me ",
+                        "give me a toy "
+                    ]
+                },
+                {
+                    "name": "MagicEightBallIntent",
+                    "slots": [],
+                    "samples": []
+                },
+                {
+                    "name": "WhoWillWinIntent",
+                    "slots": [
+                        {
+                            "name": "firstName",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        },
+                        {
+                            "name": "secondName",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "Who will win between {firstName} and {secondName}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}

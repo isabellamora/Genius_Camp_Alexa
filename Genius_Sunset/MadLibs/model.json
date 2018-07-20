@@ -1,0 +1,70 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "mad libs celine",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "NounIntent",
+                    "slots": [
+                        {
+                            "name": "myNoun",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "my noun is {myNoun}"
+                    ]
+                },
+                {
+                    "name": "VerbIntent",
+                    "slots": [
+                        {
+                            "name": "myVerb",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "my verb is {myVerb}"
+                    ]
+                },
+                {
+                    "name": "AdjectiveIntent",
+                    "slots": [
+                        {
+                            "name": "myAdjective",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "my adjective is {myAdjective}"
+                    ]
+                },
+                {
+                    "name": "StoryIntent",
+                    "slots": [],
+                    "samples": [
+                        "tell me the story",
+                        "ready"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}

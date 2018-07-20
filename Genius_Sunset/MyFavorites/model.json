@@ -1,0 +1,50 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "my celine",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "nameIntent",
+                    "slots": [
+                        {
+                            "name": "myName",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "my name is {myName}"
+                    ]
+                },
+                {
+                    "name": "myFavoriteCheeseIntent",
+                    "slots": [
+                        {
+                            "name": "myCheese",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "my favorite cheese is {myCheese}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
