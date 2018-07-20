@@ -1,0 +1,163 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "everything dylan",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "QuestionAddIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me an addition question"
+                    ]
+                },
+                {
+                    "name": "QuestionSubtractIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me and subtraction question"
+                    ]
+                },
+                {
+                    "name": "QuestionMultiplicationIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me an multiplication question"
+                    ]
+                },
+                {
+                    "name": "AnswerAddIntent",
+                    "slots": [
+                        {
+                            "name": "myAddingAnswer",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "Is the sum {myAddingAnswer}"
+                    ]
+                },
+                {
+                    "name": "AnswerSubtractIntent",
+                    "slots": [
+                        {
+                            "name": "mySubtractingAnswer",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "The difference is {mySubtractingAnswer}"
+                    ]
+                },
+                {
+                    "name": "AnswerMultiplicationIntent",
+                    "slots": [
+                        {
+                            "name": "myMultiplicationAnswer",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "the answer is {myMultiplicationAnswer}",
+                        " the product is {myMultiplicationAnswer}"
+                    ]
+                },
+                {
+                    "name": "RecipeIntent",
+                    "slots": [
+                        {
+                            "name": "myfood",
+                            "type": "AMAZON.Food"
+                        }
+                    ],
+                    "samples": [
+                        "Lets make {myfood}"
+                    ]
+                },
+                {
+                    "name": "RPSIntent",
+                    "slots": [
+                        {
+                            "name": "myChoice",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "I pick {myChoice}"
+                    ]
+                },
+                {
+                    "name": "StartIntent",
+                    "slots": [
+                        {
+                            "name": "myLevel",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "commence",
+                        "activate",
+                        "proceed",
+                        "begin",
+                        "start {myLevel}"
+                    ]
+                },
+                {
+                    "name": "GuessIntent",
+                    "slots": [
+                        {
+                            "name": "myGuess",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "is it {myGuess}",
+                        "my guess is {myGuess}",
+                        "I choose {myGuess}"
+                    ]
+                },
+                {
+                    "name": "ComplimentIntent",
+                    "slots": [
+                        {
+                            "name": "myCompliment",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "Tell me that i'm {myCompliment}"
+                    ]
+                },
+                {
+                    "name": "nameIntent",
+                    "slots": [
+                        {
+                            "name": "myName",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "my name is {myName}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
+
