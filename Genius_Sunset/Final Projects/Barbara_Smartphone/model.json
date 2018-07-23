@@ -1,0 +1,387 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "smart phone barbara",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "travelStartIntent",
+                    "slots": [],
+                    "samples": [
+                        "travel",
+                        "travel app",
+                        "open the travel app"
+                    ]
+                },
+                {
+                    "name": "bakingStartIntent",
+                    "slots": [],
+                    "samples": [
+                        "baking",
+                        "baking app",
+                        "open the baking app"
+                    ]
+                },
+                {
+                    "name": "calculatorStartIntent",
+                    "slots": [],
+                    "samples": [
+                        "calculator",
+                        "open the calculator"
+                    ]
+                },
+                {
+                    "name": "personalityStartIntent",
+                    "slots": [],
+                    "samples": [
+                        "personality",
+                        "personality app",
+                        "open the personality app"
+                    ]
+                },
+                {
+                    "name": "brownieRecipeIntent",
+                    "slots": [],
+                    "samples": [
+                        "ready to make brownies",
+                        "im ready to make brownies",
+                        "i'm ready to make brownies"
+                    ]
+                },
+                {
+                    "name": "cookieRecipeIntent",
+                    "slots": [],
+                    "samples": [
+                        "ready to make cookies",
+                        "im ready to make cookies",
+                        "i'm ready to make cookies"
+                    ]
+                },
+                {
+                    "name": "americaIntent",
+                    "slots": [],
+                    "samples": [
+                        "america",
+                        "i would like to learn about america"
+                    ]
+                },
+                {
+                    "name": "chinaIntent",
+                    "slots": [],
+                    "samples": [
+                        "china",
+                        "i would like to learn about china"
+                    ]
+                },
+                {
+                    "name": "japanIntent",
+                    "slots": [],
+                    "samples": [
+                        "japan",
+                        "i want to learn about japan"
+                    ]
+                },
+                {
+                    "name": "franceIntent",
+                    "slots": [],
+                    "samples": [
+                        "france",
+                        "i want to learn about france"
+                    ]
+                },
+                {
+                    "name": "italyIntent",
+                    "slots": [],
+                    "samples": [
+                        "italy",
+                        "i want to learn about italy"
+                    ]
+                },
+                {
+                    "name": "foodAmericaIntent",
+                    "slots": [],
+                    "samples": [
+                        "food in America"
+                    ]
+                },
+                {
+                    "name": "attractionsAmericaIntent",
+                    "slots": [],
+                    "samples": [
+                        "popular attractions in America",
+                        "attractions in America "
+                    ]
+                },
+                {
+                    "name": "foodChinaIntent",
+                    "slots": [],
+                    "samples": [
+                        "food in China"
+                    ]
+                },
+                {
+                    "name": "attractionsChinaIntent",
+                    "slots": [],
+                    "samples": [
+                        "popular attractions in China",
+                        "attractions in China"
+                    ]
+                },
+                {
+                    "name": "foodJapanIntent",
+                    "slots": [],
+                    "samples": [
+                        "food in Japan"
+                    ]
+                },
+                {
+                    "name": "attractionsJapanIntent",
+                    "slots": [],
+                    "samples": [
+                        "popular attractions in Japan",
+                        "attractions in Japan"
+                    ]
+                },
+                {
+                    "name": "foodFranceIntent",
+                    "slots": [],
+                    "samples": [
+                        "food in france"
+                    ]
+                },
+                {
+                    "name": "attractionsFranceIntent",
+                    "slots": [],
+                    "samples": [
+                        "popular attractions in france",
+                        "attractions in france"
+                    ]
+                },
+                {
+                    "name": "foodItalyIntent",
+                    "slots": [],
+                    "samples": [
+                        "food in italy"
+                    ]
+                },
+                {
+                    "name": "attractionsItalyIntent",
+                    "slots": [],
+                    "samples": [
+                        "popular attractions in italy",
+                        "attractions in italy"
+                    ]
+                },
+                {
+                    "name": "startPersonalityIntent",
+                    "slots": [],
+                    "samples": [
+                        "im ready",
+                        "ready",
+                        "begin"
+                    ]
+                },
+                {
+                    "name": "colorPersonalityIntent",
+                    "slots": [
+                        {
+                            "name": "myFootball",
+                            "type": "AMAZON.Sport"
+                        },
+                        {
+                            "name": "myDance",
+                            "type": "AMAZON.Sport"
+                        }
+                    ],
+                    "samples": [
+                        "my favorite color group is {myFootball}",
+                        "my favorite color group is {myDance}"
+                    ]
+                },
+                {
+                    "name": "designPersonalityIntent",
+                    "slots": [
+                        {
+                            "name": "myFootball",
+                            "type": "AMAZON.Sport"
+                        },
+                        {
+                            "name": "myDance",
+                            "type": "AMAZON.Sport"
+                        }
+                    ],
+                    "samples": [
+                        "my favorite design is {myDance}",
+                        "my favorite design is {myFootball}"
+                    ]
+                },
+                {
+                    "name": "subjectPersonalityIntent",
+                    "slots": [
+                        {
+                            "name": "myFootball",
+                            "type": "AMAZON.Sport"
+                        },
+                        {
+                            "name": "myDance",
+                            "type": "AMAZON.Sport"
+                        }
+                    ],
+                    "samples": [
+                        "my favorite subject is {myFootball}",
+                        "my favorite subject is {myDance}"
+                    ]
+                },
+                {
+                    "name": "freeTimePersonalityIntent",
+                    "slots": [
+                        {
+                            "name": "myFootball",
+                            "type": "AMAZON.Sport"
+                        },
+                        {
+                            "name": "myDance",
+                            "type": "AMAZON.Sport"
+                        }
+                    ],
+                    "samples": [
+                        "my favorite free time activity is {myFootball}",
+                        "my favorite free time activity is {myDance}"
+                    ]
+                },
+                {
+                    "name": "personalityIntent",
+                    "slots": [
+                        {
+                            "name": "myFootball",
+                            "type": "AMAZON.Sport"
+                        },
+                        {
+                            "name": "myDance",
+                            "type": "AMAZON.Sport"
+                        }
+                    ],
+                    "samples": [
+                        "i am {myDance}",
+                        "i am {myFootball}"
+                    ]
+                },
+                {
+                    "name": "resultsIntent",
+                    "slots": [],
+                    "samples": [
+                        "yes"
+                    ]
+                },
+                {
+                    "name": "bakingBeginIntent",
+                    "slots": [],
+                    "samples": [
+                        "start"
+                    ]
+                },
+                {
+                    "name": "additionIntent",
+                    "slots": [
+                        {
+                            "name": "myNumberOne",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "myNumberTwo",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "{myNumberOne} plus {myNumberTwo}",
+                        "add {myNumberOne} to {myNumberTwo}",
+                        "add {myNumberOne} and {myNumberTwo}",
+                        "What is {myNumberOne} added to {myNumberTwo}",
+                        "What is {myNumberOne} plus {myNumberTwo}"
+                    ]
+                },
+                {
+                    "name": "subtractionIntent",
+                    "slots": [
+                        {
+                            "name": "myNumberOne",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "myNumberTwo",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "What is {myNumberOne} subtract {myNumberTwo}",
+                        "subtract {myNumberTwo} from {myNumberOne}",
+                        "subtract {myNumberOne} and {myNumberTwo}",
+                        "Difference of {myNumberOne} and {myNumberTwo}",
+                        "How much greater is {myNumberOne} compared to {myNumberTwo}",
+                        "{myNumberOne} subtracted from {myNumberTwo}",
+                        "what is the difference of {myNumberOne} and {myNumberTwo} "
+                    ]
+                },
+                {
+                    "name": "multiplicationIntent",
+                    "slots": [
+                        {
+                            "name": "myNumberOne",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "myNumberTwo",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "{myNumberOne} multiplied to {myNumberTwo}",
+                        "What is {myNumberOne} multiplied by {myNumberTwo}",
+                        "What is {myNumberOne} multiplied to {myNumberTwo}",
+                        "Multiply {myNumberOne} and {myNumberTwo} ",
+                        "{myNumberOne} times {myNumberTwo}",
+                        "What is {myNumberOne} times {myNumberTwo}"
+                    ]
+                },
+                {
+                    "name": "divisionIntent",
+                    "slots": [
+                        {
+                            "name": "myNumberOne",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "myNumberTwo",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "Divide {myNumberOne} by {myNumberTwo}",
+                        "Divide {myNumberOne} and {myNumberTwo} ",
+                        "{myNumberOne} divided by {myNumberTwo}",
+                        "What is {myNumberOne} divided by {myNumberTwo}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
+
+
+
