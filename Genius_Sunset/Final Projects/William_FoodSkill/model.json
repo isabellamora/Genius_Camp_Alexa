@@ -1,0 +1,51 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "food skill william",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "RecipeIntent",
+                    "slots": [
+                        {
+                            "name": "myFood",
+                            "type": "AMAZON.Food"
+                        }
+                    ],
+                    "samples": [
+                        "How do i make {myFood}",
+                        "What is the recipe for {myFood}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "AMAZON.Food",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "french fries"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
+
