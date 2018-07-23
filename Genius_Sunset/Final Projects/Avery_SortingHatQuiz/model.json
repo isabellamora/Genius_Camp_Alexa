@@ -1,0 +1,39 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "sorting hat quiz",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AnswerIntent",
+                    "slots": [
+                        {
+                            "name": "myAnswer",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "I pick {myAnswer}",
+                        "I choose {myAnswer}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
