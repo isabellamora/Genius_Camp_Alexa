@@ -1,0 +1,153 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "sorting hat",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "SortingHatIntent",
+                    "slots": [],
+                    "samples": [
+                        "where am I going to go",
+                        "what house am I going to go",
+                        "house",
+                        "lets see",
+                        "lets see what house I am in",
+                        "hmm I wonder what house I am in",
+                        "sorting hat",
+                        "sortin hat what house am I in",
+                        "sorting house",
+                        "What is the house I belong in",
+                        "I wonder what house I am in",
+                        "What house am I in"
+                    ]
+                },
+                {
+                    "name": "GoBackIntent",
+                    "slots": [],
+                    "samples": [
+                        "Turn around and go back",
+                        "turn",
+                        "GoBack",
+                        "Back"
+                    ]
+                },
+                {
+                    "name": "PortalIntent",
+                    "slots": [],
+                    "samples": [
+                        "lets go to the portal",
+                        "portal",
+                        "go through the portal",
+                        "go "
+                    ]
+                },
+                {
+                    "name": "LeftIntent",
+                    "slots": [],
+                    "samples": [
+                        "Lets go left",
+                        "Go left",
+                        "left"
+                    ]
+                },
+                {
+                    "name": "RightIntent",
+                    "slots": [],
+                    "samples": [
+                        "right",
+                        "go right "
+                    ]
+                },
+                {
+                    "name": "SnitchIntent",
+                    "slots": [],
+                    "samples": [
+                        "get the snitch",
+                        "snitch"
+                    ]
+                },
+                {
+                    "name": "GoalIntent",
+                    "slots": [],
+                    "samples": [
+                        "make a goal",
+                        "goal"
+                    ]
+                },
+                {
+                    "name": "BetrayIntent",
+                    "slots": [],
+                    "samples": [
+                        "betray them",
+                        "betray"
+                    ]
+                },
+                {
+                    "name": "HelpIntent",
+                    "slots": [],
+                    "samples": [
+                        "help them",
+                        "help"
+                    ]
+                },
+                {
+                    "name": "StudyIntent",
+                    "slots": [],
+                    "samples": [
+                        "I will study",
+                        "study"
+                    ]
+                },
+                {
+                    "name": "DontStudyIntent",
+                    "slots": [],
+                    "samples": [
+                        "I will not",
+                        "no study",
+                        "do not study"
+                    ]
+                },
+                {
+                    "name": "SaveIntent",
+                    "slots": [],
+                    "samples": [
+                        "lets save the people",
+                        "go save the people",
+                        "go save them",
+                        "save the people",
+                        "Save them",
+                        "Save"
+                    ]
+                },
+                {
+                    "name": "SaveYourself",
+                    "slots": [],
+                    "samples": [
+                        "save yourself",
+                        "go through the portal",
+                        "save your self",
+                        "save myself"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
+
