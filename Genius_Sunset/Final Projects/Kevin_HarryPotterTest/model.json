@@ -1,0 +1,91 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "harry potter test",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ColorIntent",
+                    "slots": [
+                        {
+                            "name": "myColor",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "i like {myColor}",
+                        "my favorite color is {myColor}"
+                    ]
+                },
+                {
+                    "name": "HouseIntent",
+                    "slots": [
+                        {
+                            "name": "myHouse",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "i choose {myHouse}",
+                        "i choose to be in {myHouse}",
+                        "i want to be in {myHouse}"
+                    ]
+                },
+                {
+                    "name": "StartIntent",
+                    "slots": [],
+                    "samples": [
+                        "start"
+                    ]
+                },
+                {
+                    "name": "FoodIntent",
+                    "slots": [
+                        {
+                            "name": "myFood",
+                            "type": "AMAZON.Food"
+                        }
+                    ],
+                    "samples": [
+                        "my favorite food is {myFood}"
+                    ]
+                },
+                {
+                    "name": "MeIntent",
+                    "slots": [
+                        {
+                            "name": "MyChoice",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "{MyChoice}"
+                    ]
+                },
+                {
+                    "name": "ResultIntent",
+                    "slots": [],
+                    "samples": [
+                        "result"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
