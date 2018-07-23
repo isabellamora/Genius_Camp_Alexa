@@ -1,0 +1,101 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "blackjack",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": [
+                        "stop blackjack",
+                        "stop",
+                        "no don't play again",
+                        "do not play again",
+                        "don't play again",
+                        "no"
+                    ]
+                },
+                {
+                    "name": "startIntent",
+                    "slots": [],
+                    "samples": [
+                        "start playing blackjack",
+                        "start playing",
+                        "begin the game",
+                        "begin",
+                        "play",
+                        "play the game",
+                        "i am ready to play",
+                        "i am ready to start the game",
+                        "i am ready",
+                        "start the game",
+                        "start blackjack",
+                        "start"
+                    ]
+                },
+                {
+                    "name": "hitIntent",
+                    "slots": [],
+                    "samples": [
+                        "draw card",
+                        "draw a card",
+                        "draw cards",
+                        "i decide to hit",
+                        "i will hit",
+                        "i choose to hit",
+                        "i hit",
+                        "hit"
+                    ]
+                },
+                {
+                    "name": "standIntent",
+                    "slots": [],
+                    "samples": [
+                        "i will stand",
+                        "i decide to stand",
+                        "do not draw cards",
+                        "i choose to stand",
+                        "i stand",
+                        "stand"
+                    ]
+                },
+                {
+                    "name": "yesPlayAgainIntent",
+                    "slots": [],
+                    "samples": [
+                        "yes i want to play again",
+                        "yes can i play again",
+                        "can i play again",
+                        "play again",
+                        "yes i would like to play again",
+                        "yes"
+                    ]
+                },
+                {
+                    "name": "directionsIntent",
+                    "slots": [],
+                    "samples": [
+                        "tell me what the rules are",
+                        "what are the rules",
+                        "how do i play",
+                        "rules of blackjack",
+                        "how do i play blackjack"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
+
