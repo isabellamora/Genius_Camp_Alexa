@@ -1,0 +1,67 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "contest hilo",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "storyIntent",
+                    "slots": [],
+                    "samples": [
+                        "story borie"
+                    ]
+                },
+                {
+                    "name": "WouldYouRatherIntent",
+                    "slots": [],
+                    "samples": [
+                        "wyrp"
+                    ]
+                },
+                {
+                    "name": "choiceIntent",
+                    "slots": [
+                        {
+                            "name": "myChoice",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "my choice is {myChoice}"
+                    ]
+                },
+                {
+                    "name": "PartTwoIntent",
+                    "slots": [],
+                    "samples": [
+                        "story borie two"
+                    ]
+                },
+                {
+                    "name": "PartThreeIntent",
+                    "slots": [],
+                    "samples": [
+                        "story borie three"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
+
