@@ -1,0 +1,91 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "how to kaden",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "DogCheerIntent",
+                    "slots": [],
+                    "samples": [
+                        "make my dog happy",
+                        "help my dog be more cheerful",
+                        "help my dog be more happy",
+                        "help my dog",
+                        "help my dog become happy",
+                        "how do i make my dog happy",
+                        "how do i cheer my dog up if it's sad",
+                        "help my dog cheer up",
+                        "can you cheer my dog up",
+                        "can i cheer my dog up",
+                        "cheer dog up",
+                        "how do I cheer my dog up"
+                    ]
+                },
+                {
+                    "name": "DogFactsIntent",
+                    "slots": [],
+                    "samples": [
+                        "some dog facts",
+                        "dog facts please",
+                        "what is some facts about dogs",
+                        "give me facts about dogs",
+                        "tell me facts about dogs",
+                        "what are some facts about dogs",
+                        "what are some dog facts",
+                        "dog facts",
+                        "tell me some dog facts"
+                    ]
+                },
+                {
+                    "name": "DangerIntent",
+                    "slots": [],
+                    "samples": [
+                        "tell me some dangerous bugs",
+                        "tell me some animals i should stay away from",
+                        "tell me some bugs i should stay away from ",
+                        "tell me dangerous bugs",
+                        "tell me dangerous animals"
+                    ]
+                },
+                {
+                    "name": "HelpFamilyIntent",
+                    "slots": [],
+                    "samples": [
+                        "help",
+                        "help my family quick",
+                        "my family needs help",
+                        "please help",
+                        "help my family"
+                    ]
+                },
+                {
+                    "name": "SisterIntent",
+                    "slots": [],
+                    "samples": [
+                        "help my sister be happier",
+                        "tell me how to help her",
+                        "help me with my sister",
+                        "help my sister"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
