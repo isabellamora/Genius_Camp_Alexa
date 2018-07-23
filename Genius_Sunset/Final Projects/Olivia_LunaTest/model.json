@@ -1,0 +1,104 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "luna test olivia",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "CreatureIntent",
+                    "slots": [
+                        {
+                            "name": "myAnswer",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "wrakspurt makes {myAnswer}",
+                        "wrakspurt makes your brain {myAnswer}"
+                    ]
+                },
+                {
+                    "name": "DeathHorseIntent",
+                    "slots": [
+                        {
+                            "name": "myAnswer",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "to see a thestral you have to {myAnswer}",
+                        "you have to {myAnswer}"
+                    ]
+                },
+                {
+                    "name": "LostIntent",
+                    "slots": [
+                        {
+                            "name": "myAnswer",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "she mostly lost her {myAnswer}",
+                        "her {myAnswer}"
+                    ]
+                },
+                {
+                    "name": "PatronusIntent",
+                    "slots": [
+                        {
+                            "name": "myAnswer",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "a {myAnswer}",
+                        "her patronus is a {myAnswer}"
+                    ]
+                },
+                {
+                    "name": "PersonIntent",
+                    "slots": [
+                        {
+                            "name": "myAnswer",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "luna is {myAnswer}",
+                        "the actor is {myAnswer}"
+                    ]
+                },
+                {
+                    "name": "HouseIntent",
+                    "slots": [
+                        {
+                            "name": "myAnswer",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "she is in {myAnswer}",
+                        "her house is {myAnswer}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
