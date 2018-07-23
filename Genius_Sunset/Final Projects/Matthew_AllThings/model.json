@@ -1,0 +1,110 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "news matthew",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "spicyIntent",
+                    "slots": [],
+                    "samples": [
+                        "tell me some spicy foods"
+                    ]
+                },
+                {
+                    "name": "sportsIntent",
+                    "slots": [],
+                    "samples": [
+                        "tell me how to play sports"
+                    ]
+                },
+                {
+                    "name": "cookieIntent",
+                    "slots": [],
+                    "samples": [
+                        "open my fortune cookie"
+                    ]
+                },
+                {
+                    "name": "newsIntent",
+                    "slots": [
+                        {
+                            "name": "news",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "tell me the news of {news}"
+                    ]
+                },
+                {
+                    "name": "YoMamaIntent",
+                    "slots": [],
+                    "samples": [
+                        "tell me some life skills"
+                    ]
+                },
+                {
+                    "name": "RhymesIntent",
+                    "slots": [],
+                    "samples": [
+                        "tell me a rhyme"
+                    ]
+                },
+                {
+                    "name": "storyIntent",
+                    "slots": [],
+                    "samples": [
+                        "story"
+                    ]
+                },
+                {
+                    "name": "storyTwoIntent",
+                    "slots": [],
+                    "samples": [
+                        "story two",
+                        "two"
+                    ]
+                },
+                {
+                    "name": "storyThreeIntent",
+                    "slots": [],
+                    "samples": [
+                        "story three",
+                        "three"
+                    ]
+                },
+                {
+                    "name": "storyFourIntent",
+                    "slots": [],
+                    "samples": [
+                        "four"
+                    ]
+                },
+                {
+                    "name": "storyFiveIntent",
+                    "slots": [],
+                    "samples": [
+                        "five"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
