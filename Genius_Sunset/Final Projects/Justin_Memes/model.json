@@ -1,0 +1,116 @@
+
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "meme quotes justin",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "MemeIntent",
+                    "slots": [],
+                    "samples": [
+                        "give me a meme",
+                        "tell me a meme"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "Memes",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "I am one step away from becoming poor to rich, i need money"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Exercise? I thought you said 'extra fries'"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "To avoid injury, STOP ASKING ME HOW TO DO MY JOB!"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "The worst three words to hear, tomorrow is monday"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dont grow up. It’s a trap"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Waking up before 7:30am should be illegial"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "If stress burned calories, I’d be a super model"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Number fifteen, burger king foot lettuce"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sometimes, i wish i was a octopus, so i could slap 8 people at once"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Hey, bum bum bum, got any grapes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Is your body is from mcdonald's, cuz i'm lov'in it"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Sleep is my drug, my bed is my dealer, and my alarm clock is the police"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Don’t be afraid to gain a few extra pounds, fat people are harder to kidnap"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "What’s my favorite childhood memory? Not paying bills"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "We are not old, we are recycled teenagers"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
