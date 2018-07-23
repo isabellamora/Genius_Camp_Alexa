@@ -2,8 +2,10 @@
 
 You can play a game of would you rather
 
-WouldYouRatherIntent
+## WouldYouRatherIntent
+
 Utterances: start, another one, another scenario
 
-AnswerIntent
+## AnswerIntent
+
 Utterances: I rather {myChoice}, I would rather {myChoice}
