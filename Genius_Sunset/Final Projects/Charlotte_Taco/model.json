@@ -1,0 +1,132 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "build a taco",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "TortillaIntent",
+                    "slots": [
+                        {
+                            "name": "mytortilla",
+                            "type": "AMAZON.Food"
+                        }
+                    ],
+                    "samples": [
+                        "I want {mytortilla} tortilla"
+                    ]
+                },
+                {
+                    "name": "MeatIntent",
+                    "slots": [
+                        {
+                            "name": "mymeat",
+                            "type": "AMAZON.Food"
+                        }
+                    ],
+                    "samples": [
+                        "I want {mymeat} as my meat"
+                    ]
+                },
+                {
+                    "name": "CheeseIntent",
+                    "slots": [
+                        {
+                            "name": "mycheese",
+                            "type": "AMAZON.Food"
+                        }
+                    ],
+                    "samples": [
+                        "I want {mycheese} cheese"
+                    ]
+                },
+                {
+                    "name": "VeggieOneIntent",
+                    "slots": [
+                        {
+                            "name": "myveggieone",
+                            "type": "AMAZON.Food"
+                        }
+                    ],
+                    "samples": [
+                        "I want {myveggieone} as my first veggie"
+                    ]
+                },
+                {
+                    "name": "VeggieTwoIntent",
+                    "slots": [
+                        {
+                            "name": "myveggietwo",
+                            "type": "AMAZON.Food"
+                        }
+                    ],
+                    "samples": [
+                        "I want  {myveggietwo} as my second veggie"
+                    ]
+                },
+                {
+                    "name": "VeggieThreeIntent",
+                    "slots": [
+                        {
+                            "name": "myveggiethree",
+                            "type": "AMAZON.Food"
+                        }
+                    ],
+                    "samples": [
+                        "I want {myveggiethree} as my third veggie"
+                    ]
+                },
+                {
+                    "name": "VeggieFourIntent",
+                    "slots": [
+                        {
+                            "name": "myveggiefour",
+                            "type": "AMAZON.Food"
+                        }
+                    ],
+                    "samples": [
+                        "I want {myveggiefour} as my fourth veggie"
+                    ]
+                },
+                {
+                    "name": "CilantroIntent",
+                    "slots": [
+                        {
+                            "name": "mycilantro",
+                            "type": "AMAZON.Food"
+                        }
+                    ],
+                    "samples": [
+                        "no cilantro",
+                        "yes I want {mycilantro}"
+                    ]
+                },
+                {
+                    "name": "StoryIntent",
+                    "slots": [],
+                    "samples": [
+                        "see you later",
+                        "goodbye "
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
+
