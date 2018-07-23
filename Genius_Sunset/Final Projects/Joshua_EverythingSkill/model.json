@@ -1,0 +1,254 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "best skill joshua",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "QuestionAddIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me an addition question"
+                    ]
+                },
+                {
+                    "name": "QuestionSubtractIntent",
+                    "slots": [],
+                    "samples": [
+                        "Give me an subtraction question"
+                    ]
+                },
+                {
+                    "name": "QuestionMultiplyIntent",
+                    "slots": [],
+                    "samples": []
+                },
+                {
+                    "name": "AnswerAddIntent",
+                    "slots": [
+                        {
+                            "name": "myAddingAnswer",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "the sum is {myAddingAnswer}"
+                    ]
+                },
+                {
+                    "name": "AnswerSubtractIntent",
+                    "slots": [
+                        {
+                            "name": "mySubtractingAnswer",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "the difference is {mySubtractingAnswer} "
+                    ]
+                },
+                {
+                    "name": "AnswerMultiplyIntent",
+                    "slots": [
+                        {
+                            "name": "myMultiplyingAnswer",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "the product is {myMultiplyingAnswer}"
+                    ]
+                },
+                {
+                    "name": "RPSIntent",
+                    "slots": [
+                        {
+                            "name": "myChoice",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        " i choose {myChoice}"
+                    ]
+                },
+                {
+                    "name": "additionIntent",
+                    "slots": [
+                        {
+                            "name": "firstNumberAdding",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "secondNumberAdding",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "whats {firstNumberAdding} plus {secondNumberAdding}"
+                    ]
+                },
+                {
+                    "name": "subtractionIntent",
+                    "slots": [
+                        {
+                            "name": "firstNumberSubtracting",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "secondNumberSubtracting",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "whats {firstNumberSubtracting} minus {secondNumberSubtracting}"
+                    ]
+                },
+                {
+                    "name": "multiplicationIntent",
+                    "slots": [
+                        {
+                            "name": "firstNumberMultiplying",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "secondNumberMultiplying",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "whats {firstNumberMultiplying} times {secondNumberMultiplying}"
+                    ]
+                },
+                {
+                    "name": "divisionIntent",
+                    "slots": [
+                        {
+                            "name": "firstNumberDivision",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "secondNumberDivision",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "whats {firstNumberDivision} divided by {secondNumberDivision}"
+                    ]
+                },
+                {
+                    "name": "RecipeIntent",
+                    "slots": [
+                        {
+                            "name": "myRecipe",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "whats the recipe for {myRecipe}",
+                        "how do you make {myRecipe}"
+                    ]
+                },
+                {
+                    "name": "RPSIntroIntent",
+                    "slots": [],
+                    "samples": [
+                        "lets play rock paper scissors"
+                    ]
+                },
+                {
+                    "name": "randomIntent",
+                    "slots": [],
+                    "samples": [
+                        "give me a math question"
+                    ]
+                },
+                {
+                    "name": "answerRandomIntent",
+                    "slots": [
+                        {
+                            "name": "myAnswer",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "the answer is {myAnswer} "
+                    ]
+                },
+                {
+                    "name": "calculatorIntent",
+                    "slots": [],
+                    "samples": [
+                        "how do you use the calculator",
+                        "open calculator",
+                        "calculator"
+                    ]
+                },
+                {
+                    "name": "MathIntent",
+                    "slots": [],
+                    "samples": [
+                        "ask for math questions",
+                        "give me some math practice",
+                        "math practice"
+                    ]
+                },
+                {
+                    "name": "thankIntent",
+                    "slots": [],
+                    "samples": [
+                        "wow",
+                        "thanks",
+                        "thank you"
+                    ]
+                },
+                {
+                    "name": "hateIntent",
+                    "slots": [],
+                    "samples": [
+                        "you are hated",
+                        "you are horrible",
+                        "you're hated",
+                        "you're horrible",
+                        "i hate you"
+                    ]
+                },
+                {
+                    "name": "hiIntent",
+                    "slots": [],
+                    "samples": [
+                        "hello",
+                        "hi"
+                    ]
+                },
+                {
+                    "name": "upIntent",
+                    "slots": [],
+                    "samples": [
+                        "how you doin",
+                        "how you doing",
+                        "how are you doing",
+                        "whats up",
+                        "sup"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
+       
