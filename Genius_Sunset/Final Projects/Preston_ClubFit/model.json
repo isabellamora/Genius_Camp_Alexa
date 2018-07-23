@@ -1,0 +1,168 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "best fit",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "beginIntent",
+                    "slots": [],
+                    "samples": [
+                        "start",
+                        "i want to begin",
+                        "let's start",
+                        "k",
+                        "okay",
+                        "ok",
+                        "i want to start",
+                        "let's begin"
+                    ]
+                },
+                {
+                    "name": "genderIntent",
+                    "slots": [
+                        {
+                            "name": "myGender",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "i am a {myGender}"
+                    ]
+                },
+                {
+                    "name": "ageFirstIntent",
+                    "slots": [],
+                    "samples": [
+                        "first"
+                    ]
+                },
+                {
+                    "name": "ageSecondIntent",
+                    "slots": [],
+                    "samples": [
+                        "second"
+                    ]
+                },
+                {
+                    "name": "ageThirdIntent",
+                    "slots": [],
+                    "samples": [
+                        "third"
+                    ]
+                },
+                {
+                    "name": "heightIntent",
+                    "slots": [
+                        {
+                            "name": "myHeight",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "i am {myHeight} inches tall",
+                        "i am {myHeight} inches",
+                        "My height is {myHeight}"
+                    ]
+                },
+                {
+                    "name": "wristFloorIntent",
+                    "slots": [
+                        {
+                            "name": "myWristFloor",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "My wrist to floor height is {myWristFloor} inches",
+                        "My wrist to floor length is {myWristFloor} inches",
+                        "My wrist-floor length is {myWristFloor} inches",
+                        "My wrist-floor height is {myWristFloor} inches",
+                        "My wrist-floor height is {myWristFloor} ",
+                        "My wrist to floor height is {myWristFloor}",
+                        "My wrist to floor length is {myWristFloor}",
+                        "My wrist-floor length is {myWristFloor}"
+                    ]
+                },
+                {
+                    "name": "beginnerIntent",
+                    "slots": [],
+                    "samples": [
+                        "beginner",
+                        "i am a beginner"
+                    ]
+                },
+                {
+                    "name": "experiencedIntent",
+                    "slots": [],
+                    "samples": [
+                        "experienced",
+                        "I am experienced",
+                        "I am expericed"
+                    ]
+                },
+                {
+                    "name": "expertIntent",
+                    "slots": [],
+                    "samples": [
+                        "expert",
+                        "I am an expert",
+                        "I am an export"
+                    ]
+                },
+                {
+                    "name": "speedIntent",
+                    "slots": [
+                        {
+                            "name": "mySpeed",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "My swing speed is {mySpeed} miles per hour",
+                        "My swing speed is {mySpeed} mph",
+                        "My swing speed is {mySpeed}"
+                    ]
+                },
+                {
+                    "name": "numberIntent",
+                    "slots": [
+                        {
+                            "name": "myClub",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "i hit my {myClub} iron",
+                        "I hit a {myClub} iron",
+                        "i hit a {myClub}"
+                    ]
+                },
+                {
+                    "name": "resultsIntent",
+                    "slots": [],
+                    "samples": [
+                        "yes"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
+
