@@ -1,0 +1,187 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "beyblade names luke",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AlphabetIntent",
+                    "slots": [
+                        {
+                            "name": "myLetter",
+                            "type": "letters"
+                        }
+                    ],
+                    "samples": [
+                        "my letter is {myLetter}"
+                    ]
+                },
+                {
+                    "name": "FactIntent",
+                    "slots": [
+                        {
+                            "name": "myFactChoice",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "give me {myFactChoice}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "letters",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "z"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "y"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "x"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "w"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "v"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "u"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "t"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "s"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "r"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "q"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "p"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "o"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "n"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "m"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "l"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "k"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "j"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "i"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "h"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "g"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "f"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "e"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "d"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "c"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "b"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "a"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
+
