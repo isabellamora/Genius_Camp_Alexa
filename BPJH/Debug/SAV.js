@@ -17,12 +17,38 @@ const FALLBACK_MESSAGE = 'I dont recognize that';
 
 const handlers = {
     'LaunchRequest': function () {
-      var speechOutput = "This skill is just an example, what would you like to do?";
+      var speechOutput = "Welcome to Celine's Madlib! Let's being with a name. All the utterances will follow " +
+      "'The blank I choose is '. First give me a name.";
       this.response.speak(speechOutput).listen("What would you like to do?");
       this.emit(':responseReady');
     },
-    'MyFirstIntent': function () {
-        var speechOutput = "This is my very first intent";
+    'NameIntent': function () {
+        var name = this.event.intent.slots.myName; 
+        var speechOutput = "Great! Now give me a fruit that you love to eat.";
+        var speechReprompt = "Let me say this again, this is my very first intent";
+        this.response.speak(speechOutput).listen(speechReprompt);
+        this.emit(':responseReady');
+    },
+    'FruitIntent': function () {
+        this.attribute.fruit = "banana"; 
+        var speechOutput = "Kinda gross but let's move on. Now give me a friend's name.";
+        var speechReprompt = "Let me say this again, this is my very first intent";
+        this.response.speak(speechOutput); 
+        this.emit(':responseReady');
+    },
+    'FriendIntnent': function () {
+        friend = myFriend; 
+        var speechOutput = "Oooh! Sounds perfect! Lastly, give me your least favorite animal.";
+        var speechReprompt = "Let me say this again, this is my very first intent";
+        this.response.speak(speechOutput).listen(speechReprompt);
+        this.emit(':responseReady');
+    },
+    'Animal Intent': function () {
+        this.attributes.animal = this.event.intent.request.myAnimal.value; 
+        var speechOutput = "One day name was riding on a " + this.attributes.animal + " eating a " + fruit + 
+        ". When out of nowhere, a mighty figure appears out of the shadow. " + name + " frantically tries to hide behind the "
+        + animal " only for " + friend + " to come running by snatching the " + this.attributes.fruit + " as a dinosaur stomps on "
+        + name + " until they were nothing more than a " + fruit";
         var speechReprompt = "Let me say this again, this is my very first intent";
         this.response.speak(speechOutput).listen(speechReprompt);
         this.emit(':responseReady');
