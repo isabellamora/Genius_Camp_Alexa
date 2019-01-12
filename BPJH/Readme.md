@@ -1,4 +1,4 @@
-# Genius_Sunset
+# Buena Park Junior High Alexa Class
 
 
-Alexa templates and files for the Genius Alexa Camp
+This folder will have all your resources as well as links to code. 
