@@ -1,4 +1,4 @@
-##Debug Practice 1 
+## Debug Practice 1 
 
 1. Create Skill named 'BPJH_NAME_Debug1' 
 2. Open 'SAV.json' and copy 
@@ -12,7 +12,7 @@
 8. Have fund debugging! You will know the code works once you can test your skill and Alexa tells you the story. 
 
 
-#Hints 
+# Hints 
 
 1. Remember the difference between numbers and strings in a variable 
 2. Remember how to obtain slots 
