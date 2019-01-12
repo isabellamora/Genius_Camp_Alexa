@@ -1,0 +1,78 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "Celine's Madlibs",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "NameIntent",
+                    "slots": [
+                        {
+                            "name": "myName",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "The name I choose is {myName}"
+                    ]
+                },
+                {
+                    "name": "FruitIntent",
+                    "slots": [
+                        {
+                            "name": "myFruit",
+                            "type": "AMAZON.Food"
+                        }
+                    ],
+                    "samples": [
+                        "The fruit I choose is {myFruit}"
+                    ]
+                },
+                {
+                    "name": "FriendIntent",
+                    "slots": [
+                        {
+                            "name": "myFriend",
+                            "type": "AMAZON.US_FIRST_NAME"
+                        }
+                    ],
+                    "samples": [
+                        "The friend I choose is {myFriend}"
+                    ]
+                },
+                {
+                    "name": "AnimalIntent",
+                    "slots": [
+                        {
+                            "name": "myAnimal",
+                            "type": "AMAZON.Animal"
+                        }
+                    ],
+                    "samples": [
+                        "the animal I choose is {myAnimal}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
