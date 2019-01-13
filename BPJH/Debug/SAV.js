@@ -48,7 +48,7 @@ const handlers = {
         var speechOutput = "One day name was riding on a " + this.attributes.animal + " eating a " + fruit + 
         ". When out of nowhere, a mighty figure appears out of the shadow. " + name + " frantically tries to hide behind the "
         + animal " only for " + friend + " to come running by snatching the " + this.attributes.fruit + " as a dinosaur stomps on "
-        + name + " until " + this.attributes.name + " they were nothing more than a " + fruit";
+        + name + " until " + " name they were nothing more than a " + fruit;
         var speechReprompt = "Let me say this again, this is my very first intent";
         this.response.speak(speechOutput).listen(speechReprompt);
         this.emit(':responseReady');
