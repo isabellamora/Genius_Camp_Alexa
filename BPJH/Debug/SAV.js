@@ -45,9 +45,9 @@ const handlers = {
     },
     'Animal Intent': function () {
         this.attributes.animal = this.event.intent.request.myAnimal.value; 
-        var speechOutput = "One day name was riding on a " + this.attributes.animal + " eating a " + fruit + 
+        var speechOutput = "One day name was riding on a " + this.atributes.animal + " eating a " + fruit + 
         ". When out of nowhere, a mighty figure appears out of the shadow. " + name + " frantically tries to hide behind the "
-        + animal " only for " + friend + " to come running by snatching the " + this.attributes.fruit + " as a dinosaur stomps on "
+        + animal " only for " + friend + " to come running by snatching the " + this.attribute.fruit + " as a dinosaur stomps on "
         + name + " until " + " name they were nothing more than a " + fruit;
         var speechReprompt = "Let me say this again, this is my very first intent";
         this.response.speak(speechOutput).listen(speechReprompt);
