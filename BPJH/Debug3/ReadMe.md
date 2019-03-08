@@ -1,6 +1,6 @@
-## It's Time for Debug #3!!
+  # It's Time for Debug #3!!
 
- #  Skill Name: Math Challenge
+#  Skill Name: Math Challenge
 
     1. Same instructions as always. Copy and paste Json into front-end and .js into backend 
     2. Twist on debug #3, there will be errors in BOTH the front-end and back-end 
