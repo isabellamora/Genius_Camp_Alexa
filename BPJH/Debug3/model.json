@@ -1,0 +1,72 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "math challenge",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "QuestionAddIntent",
+                    "slots": [],
+                    "samples": [
+                        "subtraction",
+                        "addition",
+                        "Give me an addition question"
+                    ]
+                },
+                {
+                    "name": "QuestionSubtractIntent",
+                    "slots": [],
+                    "samples": [
+                        "add",
+                        "subtraction ",
+                        "Give me a subtraction question "
+                    ]
+                },
+                {
+                    "name": "AnswerAddIntent",
+                    "slots": [
+                        {
+                            "name": "mySum",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "The difference is {mySum}"
+                    ]
+                },
+                {
+                    "name": "AnswerSubIntent",
+                    "slots": [
+                        {
+                            "name": "myDifference",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "the difference is {myDifference}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
