@@ -12,6 +12,13 @@
         
         You: “The sum is 12” 
         Alexa: “Correct”
+        
+     Hints: There are not only syntax errors but also logical errors! 
+     
+     Ex. 
+     
+     Sum of 9 and 5 = 4 ??? 
+     No, that is the difference!
 
 # Good luck!! 
 
