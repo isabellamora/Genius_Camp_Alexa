@@ -54,7 +54,7 @@
                     ]
                 },
                 {
-                    "name": "AnswerSubIntent",
+                    "name": "AnswerSubractIntent",
                     "slots": [
                         {
                             "name": "myDifference",
