@@ -22,8 +22,10 @@ In 'LaunchRequest'
     
 NEXT! 
 1. We need to change intent name, 'MyFirstIntent' to match the one we created in the front end 
+
 2. We need to create a variable that stores the user's choice 
   //Hint this would require the slot from the front end 
+  
 3. Next we need to compare the user's choice and the computer's choice to see who would win. 
     Hint: You need to use "if-elseif-else" statements 
     Hint2: Think about how many different scenarios there would be. 
