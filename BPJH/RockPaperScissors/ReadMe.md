@@ -4,7 +4,7 @@ I have included my code that I typed up at the end of class yesterday if you wan
 
 # Process: 
 
-In 'LaunchRequest'
+##In 'LaunchRequest'
 1. We need to create an array that stores the options the computer can choose from 
     var options = ["Rock", "Paper", "Scissors"]; 
     
@@ -20,7 +20,7 @@ In 'LaunchRequest'
     this.attributes.computerChoice = options[randomNumber]; 
     
     
-NEXT! 
+##NEXT! 
 1. We need to change intent name, 'MyFirstIntent' to match the one we created in the front end 
 
 2. We need to create a variable that stores the user's choice 
