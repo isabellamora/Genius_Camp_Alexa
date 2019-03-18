@@ -1,6 +1,7 @@
 # Rock Paper Scissors 
 
-I have included my code that I typed up at the end of class yesterday if you want to take a look at it. 
+I have included my code (JS) that I typed up at the end of class yesterday if you want to take a look at it. 
+If you were absent, I have also included the JSON file. 
 
 # Process: 
 
