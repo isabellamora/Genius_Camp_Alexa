@@ -13,11 +13,11 @@ User: “Add 3 and 7”
 Alexa: “The answer is 10”
 
 
-# Hint:
+## Hint:
       We won't need "If-else" statements in this skill! 
       Errors are in both the front and back end 
 
-## CHALLENGE:
+### CHALLENGE:
 
 Have Alexa compute for 3 numbers also!
 
