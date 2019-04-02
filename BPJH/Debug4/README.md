@@ -6,4 +6,18 @@ This is more of an incomplete skill than it is a debugging activity. I have give
 1. fix the errors 
 2. add Multiplication and Division 
 
+Ex. 
+
+User: “Add 3 and 7”
+Alexa: “The answer is 10”
+
+
 Hint: we won't need "If-else" statements in this skill! 
+      Errors are in both the front and back end 
+
+#CHALLENGE: Have Alexa compute for 3 numbers also!
+
+Ex. 
+
+User: Add 5 and 4 and 9 
+Alexa: The sum is 18
