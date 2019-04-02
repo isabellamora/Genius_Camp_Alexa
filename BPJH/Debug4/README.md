@@ -16,7 +16,9 @@ Alexa: “The answer is 10”
       we won't need "If-else" statements in this skill! 
       Errors are in both the front and back end 
 
-CHALLENGE: Have Alexa compute for 3 numbers also!
+## CHALLENGE:
+
+Have Alexa compute for 3 numbers also!
 
 Ex. 
 
