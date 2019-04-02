@@ -1,0 +1,64 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "calculator",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AddIntent",
+                    "slots": [
+                        {
+                            "name": "firstNum",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "secondNum",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "Add {firstNum} and {secondNum}",
+                        "What is {firstNum} plus {secondNum}"
+                    ]
+                },
+                {
+                    "name": "SubtractIntent",
+                    "slots": [
+                        {
+                            "name": "firstNum",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "secondNum",
+                            "type": "AMAZON.NUMBER"
+                        }
+                    ],
+                    "samples": [
+                        "Subtract {secondNum} from {secondNum}",
+                        "What is {firstNum} plus {secondNum}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
