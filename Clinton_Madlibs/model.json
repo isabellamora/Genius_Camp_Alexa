@@ -1,0 +1,67 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "celine madlibs",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "nounIntent",
+                    "slots": [
+                        {
+                            "name": "myNoun",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "the noun i choose is {myNoun}",
+                        "my noun is {myNoun}"
+                    ]
+                },
+                {
+                    "name": "favoritePetIntent",
+                    "slots": [
+                        {
+                            "name": "myFavPet",
+                            "type": "AMAZON.Animal"
+                        }
+                    ],
+                    "samples": [
+                        "my favorite pet is {myFavPet}"
+                    ]
+                },
+                {
+                    "name": "adjectiveIntent",
+                    "slots": [
+                        {
+                            "name": "myAdjective",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "my adjective is {myAdjective}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
