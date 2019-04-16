@@ -13,7 +13,7 @@ So build mine if you want to use at as an example.
 
 Your task however is to create your OWN adventure game so do not use my story. 
  
-# Requirement: 
+# Requirements: 
   
   There should be at least 8 intents (4 different progressions) - in mine I have 2, for my two routes, this is one progression 
   There should be at least 2 different endings. 
