@@ -1,0 +1,50 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "adventure game",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "McDonaldsIntent",
+                    "slots": [],
+                    "samples": [
+                        "chicken nuggets ",
+                        "i want to go to mcdonalds",
+                        "I want chicken nuggets ",
+                        "mcdonalds"
+                    ]
+                },
+                {
+                    "name": "HomeIntent",
+                    "slots": [],
+                    "samples": [
+                        "go home ",
+                        "i'm going to go home ",
+                        "i want to go home ",
+                        "head home "
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
