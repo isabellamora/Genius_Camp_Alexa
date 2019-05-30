@@ -17,9 +17,9 @@ const FALLBACK_MESSAGE = 'I dont recognize that';
 
 const handlers = {
     'LaunchRequest': function () {
-      var speechOutput = "Welcome to Ms. Celine's Trivia. Answer by saying something like: " +
-      "'Ms. Celine's favorite blank is blank' " + "First Question: "
-      "What is Ms. Celine's favorite color? ";
+      var speechOutput = "Welcome to Celine's Trivia. Answer by saying something like: " +
+      "' Celine's favorite blank is blank' " + "First Question: "
+      "What is Celine's favorite color? ";
       this.response.speak(speechOutput).listen("What would you like to do?");
       this.emit(':responseReady');
     },
@@ -33,7 +33,7 @@ const handlers = {
         else{
             "Sorry, better luck next time!"; 
         }
-        speechOutput += " Next Question: What is Ms. Celine's favorite sport?";
+        speechOutput += " Next Question: What is Celine's favorite sport?";
         var speechReprompt = "Let me say this again, this is my very first intent";
         this.response.speak(speechOutput).(speechReprompt);
         this.emit(':responseReady');
@@ -46,7 +46,7 @@ const handlers = {
         else
             "Yikes, maybe you should pay more attention"; 
         }
-        speechOutput += " Final Question: What is Ms. Celine's favorite snack?";
+        speechOutput += " Final Question: What is Celine's favorite snack?";
         this.response.speak(speechOutput).listen(speechReprompt);
         this.emit(':responseReady');
     },
@@ -55,7 +55,7 @@ const handlers = {
         var userGuess = this.events.intents.request.slots.mySnacks.value; 
         var speechOutput; 
         if(snackAnswer = userGuess){
-            speechOutput = "CORRECT! You are a Ms. Celine expert";
+            speechOutput = "CORRECT! You are a Celine expert";
         }
         else if(snackAnswer){
             speechReprompt = "Sorry, better luck next time!"; 
