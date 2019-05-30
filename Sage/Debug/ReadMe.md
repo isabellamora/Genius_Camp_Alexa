@@ -7,9 +7,10 @@
 
 5. Create the Lambda Function with the same name 
 6. Connect Endpoints 
-7. Open 'SAV.js' and REPLACE the code like we usually do 
+7. Upload the .zip file
+8. Open 'SAV.js' and REPLACE the code 
 
-8. Have fund debugging! You will know the code works once you can test your skill and Alexa tells you the story. 
+9. Have fund debugging! You will know the code works once you can test your skill. 
 
 
 # Hints 
