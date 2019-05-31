@@ -1,7 +1,7 @@
 # Spring at Sage High School 
 
     Day 1: Hello World, Madlibs
-    Day 2: Guessing Game, Rock Paper Scissors
+    Day 2: Guessing Game, Rock Paper Scissors + Sound
     Day 3: Debug
 
 # Amazon Sound Clip Library
