@@ -1,0 +1,98 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "piggybank",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AddName",
+                    "slots": [
+                        {
+                            "name": "myName",
+                            "type": "AMAZON.FirstName"
+                        }
+                    ],
+                    "samples": [
+                        "add {myName}"
+                    ]
+                },
+                {
+                    "name": "AddMoney",
+                    "slots": [
+                        {
+                            "name": "money",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "myName",
+                            "type": "AMAZON.FirstName"
+                        }
+                    ],
+                    "samples": [
+                        "give {money} dollars to {myName}"
+                    ]
+                },
+                {
+                    "name": "RemoveName",
+                    "slots": [
+                        {
+                            "name": "myName",
+                            "type": "AMAZON.FirstName"
+                        }
+                    ],
+                    "samples": [
+                        "remove {myName}"
+                    ]
+                },
+                {
+                    "name": "GetMoney",
+                    "slots": [
+                        {
+                            "name": "myName",
+                            "type": "AMAZON.FirstName"
+                        }
+                    ],
+                    "samples": [
+                        "how much money does {myName}"
+                    ]
+                },
+                {
+                    "name": "SubtractMoney",
+                    "slots": [
+                        {
+                            "name": "money",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "myName",
+                            "type": "AMAZON.FirstName"
+                        }
+                    ],
+                    "samples": [
+                        "take {money} dollars from {myName}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
