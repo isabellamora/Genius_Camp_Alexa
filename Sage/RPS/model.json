@@ -1,0 +1,63 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "rps",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "RPSIntent",
+                    "slots": [
+                        {
+                            "name": "rpsChoice",
+                            "type": "RPS"
+                        }
+                    ],
+                    "samples": [
+                        "I choose {rpsChoice}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "RPS",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "scissors"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "paper "
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rock "
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
