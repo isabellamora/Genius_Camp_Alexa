@@ -1,0 +1,72 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "fan trivia",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "QuestionIntent",
+                    "slots": [],
+                    "samples": []
+                },
+                {
+                    "name": "AnswerIntent",
+                    "slots": [
+                        {
+                            "name": "answer",
+                            "type": "AMAZON.Color"
+                        }
+                    ],
+                    "samples": [
+                        "the person who said it is {answer}",
+                        "{answer}"
+                    ]
+                },
+                {
+                    "name": "PlayerOneIntent",
+                    "slots": [
+                        {
+                            "name": "playeronename",
+                            "type": "AMAZON.FirstName"
+                        }
+                    ],
+                    "samples": [
+                        "{playeronename}"
+                    ]
+                },
+                {
+                    "name": "PlayerTwoIntent",
+                    "slots": [
+                        {
+                            "name": "playertwoname",
+                            "type": "AMAZON.FirstName"
+                        }
+                    ],
+                    "samples": [
+                        "{playertwoname}"
+                    ]
+                }
+            ],
+            "types": []
+        }
+    }
+}
