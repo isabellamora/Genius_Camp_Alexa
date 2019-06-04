@@ -1,42 +1,225 @@
-{
-    "interactionModel": {
-        "languageModel": {
-            "invocationName": "guessing game",
-            "intents": [
-                {
-                    "name": "AMAZON.FallbackIntent",
-                    "samples": []
-                },
-                {
-                    "name": "AMAZON.CancelIntent",
-                    "samples": []
-                },
-                {
-                    "name": "AMAZON.HelpIntent",
-                    "samples": []
-                },
-                {
-                    "name": "AMAZON.StopIntent",
-                    "samples": []
-                },
-                {
-                    "name": "AMAZON.NavigateHomeIntent",
-                    "samples": []
-                },
-                {
-                    "name": "GuessIntent",
-                    "slots": [
-                        {
-                            "name": "myGuess",
-                            "type": "AMAZON.NUMBER"
-                        }
-                    ],
-                    "samples": [
-                        "my guess is {myGuess}"
-                    ]
-                }
-            ],
-            "types": []
+'use strict';
+const Alexa = require('alexa-sdk');
+
+//Replace with your app ID (OPTIONAL).  You can find this value at the top of your skill's page on http://developer.amazon.com.
+//Make sure to enclose your value in quotes, like this: const APP_ID = 'amzn1.ask.skill.bb4045e6-b3e8-4133-b650-72923c5980f1';
+const APP_ID = undefined;
+
+//Alexa will speak out the help message when a user says help
+//For an idea of what you should say
+//-> "You can say tell me a space fact, or, you can say exit... What can I help you with?"
+const HELP_MESSAGE = 'HELP MESSAGE';
+const HELP_REPROMPT = 'What can I help you with?';
+
+//Alexa will speak out the stop message when the program ends
+const STOP_MESSAGE = 'Goodbye!';
+const FALLBACK_MESSAGE = 'I dont recognize that';
+
+  
+    var questioncount = 0;
+    var person1points = 0;
+    var person2points = 0;
+    var playerOnename; 
+    var playerTwoname; 
+
+
+    var questions = [
+        
+                    "Happiness is not something you have to achieve. You can still be happy during the process of achieving something.",
+                    "It’s alright even if you don’t have a dream. It’s possible to not have one. Just be happy.", 
+                    "I’d rather die than live without passion.", 
+                    "English is not a barrier when you’re as cute as me!", 
+                    "Win, lose, I don't care, because at the end of the day I still have this face so who's the real winner.",
+                    "Purple is the last of the rainbow colors, so it means I will love and trust you for a long time.",
+                        
+                    "Dream. Though your beginnings may be humble, may the end be...",
+                    "Where there is hope, there is always...",
+                    "If you think you are gonna crash...",
+                        
+                    "Why am I in love alone? Why am I hurting alone? Why do I keep needing you when I know I’ll get hurt?",
+                    "He too was a tempter; he, too, was a link to the second. The evil world with which I no longer wanted to have anything to do.",
+                    "In the end, we reached the mirage and it became our reality. The scary desert became the ocean with our blood, sweat and tears.",
+                    "The universe has moved for us, without missing a single thing. Our happiness was meant to be, because you love me, and I love you.",
+                    "I still wonder wonder beautiful story. Still wonder wonder best part. I still wander wander next story. I want to make you mine.",
+                    "On days where I hate myself for being me, on days where I want to disappear forever. Let's make a door. It's in your heart. Open the door and this place will await.",
+                    "The world doesn’t have the right to swear about what is the way to dream a dream, since they never taught us that. Every breath you breathe, is already here.",
+                    "Snowflakes fall down and get farther away little by little. I miss you. I miss you. How long do I have to wait? And how many sleepless nights do I have to spend to see you, to meet you?",
+                        
+                    "What awards did BTS win in the 2019 Billboard Awards?",
+                    "Who are the third and fourth oldest members of BTS?",
+                    "Which member called himself Klint, Renoir, and Van Gogh on the Bon Voyage trip?",
+                    "2019 is BTS'anniversary number....?",
+                    "Jungkook’s solo song in the album Wings is...?",
+                    "The storyline and music video for Blood, Sweat and Tears is inspired by which real life book?",
+                    "Which BTS member has an Aquarius sun sign?",
+                    "When BTS paired up with UNICEF, inspired fans eagerly donated to the cause and raised how much in less than two days for UNICEF’s campaign to feed malnourished children?",
+                    "Apart from Rap Monster, what does RM stand for?",
+                    "The last member to join BTS was...?"
+                    
+                    ];
+
+    var answers =   [
+        
+                    "RM",
+                    "Yoongi",
+                    "Jungkook",
+                    "Jimin",
+                    "Jin",
+                    "Taehyung",
+                    
+                    "prosperous",
+                    "hardship",
+                    "go faster",
+                    
+                    "I Need U",
+                    "Blood, Sweat and Tears",
+                    "Sea",
+                    "Serendipity",
+                    "Scenery",
+                    "Magic Shop",
+                    "Paradise",
+                    "Spring Day",
+                    
+                    "Best social artist and best group",
+                    "JHope and RM",
+                    "Taehyung",
+                    "six",
+                    "Begin",
+                    "Demian",
+                    "JHope",
+                    "one million dollars",
+                    "Real Me",
+                    "Jimin"
+                    
+                    ];
+    
+    
+const handlers = {
+    'LaunchRequest': function () {
+      var speechOutput = "Hello ARMY. Welcome to the BTS Fan Game! We will be answering trivia questions related to BTS under four different trivia categories! To start off, I need your names. What is the name of player number one?";
+      this.response.speak(speechOutput).listen("What would you like to do?");
+      this.emit(':responseReady');
+    }, 
+    
+    'PlayerOneIntent': function () {
+        playerOnename = this.event.request.intent.slots.playerOnename.value;
+        var speechOutput = "Got it. What is the name of player number two?";
+        this.response.speak(speechOutput).listen("What would you like to do?");
+        this.emit(':responseReady');
+    },
+    
+    'PlayerTwoIntent' : function () {
+        playerTwoname = this.event.request.intent.slots.playerTwoname.value;
+        this.emit('QuestionIntent'); 
+     },
+    
+    'QuestionIntent': function () {
+        var speechOutput = "Okay. The first category is called 'Who Said This Quote?'. We will begin now. As soon as I am done asking the question, you can answer by stating which BTS member has said the quote. If you are correct, you earn ten points. Let me know when you are ready, and best of luck!!!";
+            this.response.speak(speechOutput).listen("What would you like to do?");
+            this.emit(':responseReady');
+    },
+
+    'StartGameIntent':function () {
+        var speechOutput; 
+        
+        if (questioncount == 0) {
+            speechOutput = questions[questioncount];
         }
-    }
-}
+
+        else if (questioncount == 6){
+        speechOutput = questions[questioncount];
+        speechOutput += "We are done with the first category. Moving on. The second category is called 'Finish the Sentence'. I will begin a sentence, and you may answer by finishing it. Let's go. The first sentence is:";
+        }
+
+       else if (questioncount == 6) {
+        speechOutput = questions[questioncount];
+        speechOutput += "We are done with the first category. Moving on. The second category is called 'Finish the Sentence'. I will begin a sentence, and you may answer by finishing it. Let's go. The first sentence is:";
+        }
+        
+        else if (questioncount == 9) {
+        speechOutput = questions[questioncount];
+        speechOutput += "Okay. The second category is now over. The third category is 'Guess the Song Lyrics'. I will state some BTS song lyrics, and you will respond by stating the name of the song. Listen closely! Here we go:";
+        }
+        
+        else if (questioncount == 17) {
+        speechOutput = questions[questioncount];
+        speechOutput += "Okay. The third category is over! Now we are moving into the very last category called 'Fun Facts'. This is your last opportunity to score points, so get ready! I will read a fact and you will either answer by filling in the blank or stating a fact. Let's begin. Ready, set, go!";
+        }
+        
+        else if (questioncount == 26) {
+        speechOutput = questions[questioncount];
+        }
+            if (person1points>person2points) {
+                speechOutput = "Congratulations!! You have finished playing the BTS Fan Trivia game! The winner with the most points is " + playerOnename;
+                }
+                else if (person1points<person2points) {
+                    speechOutput = "Congratulations!! You have finished playing the BTS Trivia game! The winner with the most points is " + playerTwoname;
+        }
+        
+        var speechReprompt = "Let me say this again, this is my very first intent";
+        this.response.speak(speechOutput).listen(speechReprompt);
+        this.emit(':responseReady');
+        
+    },/*
+
+    'AnswerIntent': function () {
+        var speechOutput; 
+        var answers = this.event.request.intent.slots.answers.value;
+       
+        if(answers == answers[questioncount]) {
+            if (questioncount%2 == 0){
+                person1points += 10;
+            }
+            
+            else {
+                person2points += 10;
+                
+            }
+           speechOutput = "Correct!";
+           speechOutput += "Cool. Next question.";
+           questioncount++; 
+        }
+        
+        else {
+            speechOutput = "Wrong. Just wrong. Try again";
+            this.emit('QuestionIntent'); 
+        }
+        
+        var speechReprompt = "Let me say this again, this is my very first intent";
+        this.response.speak(speechOutput).listen(speechReprompt);
+        this.emit(':responseReady');
+    
+    },*/
+    
+ 
+    'AMAZON.HelpIntent': function () {
+        const speechOutput = HELP_MESSAGE;
+        const reprompt = HELP_REPROMPT;
+
+        this.response.speak(speechOutput).listen(reprompt);
+        this.emit(':responseReady');
+    },
+    'AMAZON.CancelIntent': function () {
+        this.response.speak(STOP_MESSAGE);
+        this.emit(':responseReady');
+    },
+    'AMAZON.StopIntent': function () {
+        this.response.speak(STOP_MESSAGE);
+        this.emit(':responseReady');
+    },
+     'AMAZON.FallbackIntent': function () {
+        this.response.speak(FALLBACK_MESSAGE).listen(HELP_REPROMPT);
+        this.emit(':responseReady');
+    },
+};
+
+//=========================================================================================================================================
+//Editing anything below this line might break your skill.
+//=========================================================================================================================================
+
+exports.handler = function (event, context, callback) {
+    const alexa = Alexa.handler(event, context, callback);
+    alexa.APP_ID = APP_ID;
+    alexa.registerHandlers(handlers);
+    alexa.execute();
+};
